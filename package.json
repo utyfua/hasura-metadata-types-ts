@@ -1,6 +1,6 @@
 {
   "name": "hasura-metadata-types",
-  "version": "2.22.0",
+  "version": "2.22.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,8 +20,10 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.0.3",
+  "dependencies": {
     "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.3"
   }
 }
