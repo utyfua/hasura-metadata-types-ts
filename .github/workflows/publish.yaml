@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'VERSION'
+      - 'VERSION_INTERNAL'
 
 jobs:
   publish:

@@ -6,4 +6,4 @@ tag=$( \
 # save version in a file
 echo $tag > VERSION
 # replace version in package.json and save it
-jq ".version = \"$tag-test.2\"" package.json > package.json.tmp && mv package.json.tmp package.json
+jq ".version = \"$tag\"" package.json > package.json.tmp && mv package.json.tmp package.json
