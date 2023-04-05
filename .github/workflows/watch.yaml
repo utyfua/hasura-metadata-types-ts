@@ -1,7 +1,8 @@
+# https://stackoverflow.com/a/58468828
 name: Get latest release version
 on:
   schedule:
-    - cron:  '*/15 * * * *'
+    - cron:  '0 10 * * *'
 jobs:
   get-version:
     runs-on: ubuntu-latest

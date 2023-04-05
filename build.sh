@@ -1,5 +1,8 @@
-# clone target and ignore errors if it already exists
-git clone --depth 1 --branch $TARGET_BRANCH https://github.com/hasura/graphql-engine/
+TARGET_BRANCH=$(cat VERSION)
+
+rm -rf graphql-engine || true
+# clone target
+git clone --depth 1 -b v$TARGET_BRANCH https://github.com/hasura/graphql-engine/
 
 # recreate output directory and ignore errors if it already exists
 rm -rf dist || true
