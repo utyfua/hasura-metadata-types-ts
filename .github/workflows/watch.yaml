@@ -18,7 +18,7 @@ jobs:
       - name: Commit latest release version
         if: steps.git-check.outputs.modified == 'true'
         run: |
-          git config --global user.name 'Utyfua'
-          git config --global user.email 'utyfua@gmail.com'
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'utyfua+hasura-metadata-types-ts@users.noreply.github.com'
           git commit -am "New release version"
           git push
