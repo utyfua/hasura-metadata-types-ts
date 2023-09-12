@@ -1,6 +1,6 @@
 {
   "name": "hasura-metadata-types",
-  "version": "2.33.3",
+  "version": "2.33.4",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
