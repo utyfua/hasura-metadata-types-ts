@@ -1,15 +1,18 @@
 # https://stackoverflow.com/a/58468828
 name: Get latest release version
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '0 10 * * *'
+permissions:
+  contents: write
 jobs:
   get-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.REPO_SCOPED_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Fetch release version
         run: chmod 777 ./fetch-version.sh && ./fetch-version.sh
       - name: Check for modified files
