@@ -2,6 +2,8 @@ name: Publish the latest version of the package
 on:
   workflow_dispatch: # in case if push trigger didnt trigger(?)
   push:
+    branches:
+      - master
     paths:
       - 'VERSION'
       - 'VERSION_INTERNAL'
